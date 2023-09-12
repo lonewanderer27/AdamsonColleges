@@ -16,40 +16,40 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     Integer[] ICONS = {
-        R.drawable.cc,
-            R.drawable.cor,
-            R.drawable.jer,
-            R.drawable.kal,
-            R.drawable.lel,
-            R.drawable.nun,
-            R.drawable.ohgi,
-            R.drawable.shir,
-            R.drawable.suz,
-            R.drawable.zel
+        R.drawable.logo_architecture,
+            R.drawable.logo_businessadmin,
+            R.drawable.logo_liberalarts,
+            R.drawable.logo_engineering,
+            R.drawable.logo_law,
+            R.drawable.logo_nursing,
+            R.drawable.logo_pharmacy,
+            R.drawable.logo_sciences,
+            R.drawable.logo_gradschool,
+            R.drawable.logo_svst
     };
     Integer[] IMAGES = {
-            R.drawable.cct,
-            R.drawable.cort,
-            R.drawable.jert,
-            R.drawable.kalt,
-            R.drawable.lelt,
-            R.drawable.nunt,
-            R.drawable.ohgit,
-            R.drawable.shirt,
-            R.drawable.suzt,
-            R.drawable.zelt
+            R.drawable.image_archi,
+            R.drawable.image_ba,
+            R.drawable.image_la,
+            R.drawable.image_engineering,
+            R.drawable.image_law,
+            R.drawable.image_nursing,
+            R.drawable.image_pharmacy,
+            R.drawable.image_science,
+            R.drawable.image_grad,
+            R.drawable.image_svst
     };
     String[] TITLES = {
-            "C.C",
-            "Cornelia li Britannia",
-            "Jeremiah Gottwald",
-            "Cornelia li Britannia",
-            "Lelouch Lamperouge",
-            "Nunnally",
+            "College of Architecture",
+            "College of Business Administration",
+            "College of Education & Liberal Arts",
+            "College of Engineering",
+            "College of Law",
+            "College of Nursing",
             "College of Pharmacy",
             "College of Science",
-            "Suzaku Kururugi",
-            "Scneizel El Britannia"
+            "Graduate School",
+            "St. Vincent School of Theology"
     };
 
     @Override
