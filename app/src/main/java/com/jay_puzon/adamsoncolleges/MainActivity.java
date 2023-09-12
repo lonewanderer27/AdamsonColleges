@@ -46,8 +46,8 @@ public class MainActivity extends AppCompatActivity {
             "Cornelia li Britannia",
             "Lelouch Lamperouge",
             "Nunnally",
-            "College of Pharmacy",
-            "College of Science",
+            "Kaname Ohgi",
+            "Shirley Fenette",
             "Suzaku Kururugi",
             "Scneizel El Britannia"
     };

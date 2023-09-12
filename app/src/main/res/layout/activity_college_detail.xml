@@ -9,11 +9,11 @@
     <ImageView
         android:id="@+id/bg"
         android:layout_width="match_parent"
-        android:layout_height="350dp">
+        android:layout_height="500dp">
     </ImageView>
     <TextView
         android:id="@+id/title"
-        android:textSize="50sp"
+        android:textSize="35sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 </LinearLayout>
