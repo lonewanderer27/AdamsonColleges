@@ -3,6 +3,7 @@ package com.jay_puzon.adamsoncolleges;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -24,6 +25,8 @@ public class CollegeDetail extends AppCompatActivity {
         int IMAGE = intent.getIntExtra("IMAGE", 0);
         String TITLE = intent.getStringExtra("TITLE");
         int ICON = intent.getIntExtra("ICON", 0);
+        MediaPlayer MP = MediaPlayer.create(this, intent.getIntExtra("AUDIO", 0));
+        MP.start();
 
         BG.setImageResource(IMAGE);
         Title.setText(TITLE);
