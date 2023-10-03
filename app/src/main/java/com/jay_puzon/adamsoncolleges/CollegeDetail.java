@@ -12,6 +12,7 @@ public class CollegeDetail extends AppCompatActivity {
 
                                                                         ImageView BG;
     TextView Title;
+    MediaPlayer AUDIO;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,10 +26,16 @@ public class CollegeDetail extends AppCompatActivity {
         int IMAGE = intent.getIntExtra("IMAGE", 0);
         String TITLE = intent.getStringExtra("TITLE");
         int ICON = intent.getIntExtra("ICON", 0);
-        MediaPlayer AUDIO = MediaPlayer.create(this, intent.getIntExtra("AUDIO", 0));
+        AUDIO = MediaPlayer.create(this, intent.getIntExtra("AUDIO", 0));
         AUDIO.start();
 
         BG.setImageResource(IMAGE);
         Title.setText(TITLE);
+    }
+
+    @Override
+    protected  void onPause() {
+        super.onPause();
+        AUDIO.release();
     }
 }
