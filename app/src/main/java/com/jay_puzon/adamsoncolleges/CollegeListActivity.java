@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.telecom.Call;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -13,7 +12,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class CollegeListActivity extends AppCompatActivity {
 
     Integer[] ICONS = {
         R.drawable.logo_architecture,
@@ -52,6 +51,19 @@ public class MainActivity extends AppCompatActivity {
             "St. Vincent School of Theology"
     };
 
+    Integer[] AUDIOS = {
+            R.raw.architecture,
+            R.raw.business_administration,
+            R.raw.educ_and_liberal_arts,
+            R.raw.engineering,
+            R.raw.law,
+            R.raw.nursing,
+            R.raw.pharmacy,
+            R.raw.science,
+            R.raw.grad_school,
+            R.raw.theology
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
                 CallDetail.putExtra("TITLE", TITLES[i]);
                 CallDetail.putExtra("IMAGE", IMAGES[i]);
                 CallDetail.putExtra("ICON", ICONS[i]);
+                CallDetail.putExtra("AUDIO", AUDIOS[i]);
                 startActivity(CallDetail);
             }
         });

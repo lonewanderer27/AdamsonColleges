@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 
-public class SplashScreen extends AppCompatActivity {
+public class AdamsonCollegesSplash extends AppCompatActivity {
     Intent CallMain;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
