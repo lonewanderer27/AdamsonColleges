@@ -43,13 +43,26 @@ public class MainActivity extends AppCompatActivity {
             "C.C",
             "Cornelia li Britannia",
             "Jeremiah Gottwald",
-            "Cornelia li Britannia",
+            "Kallen Stadfield",
             "Lelouch Lamperouge",
             "Nunnally",
             "Kaname Ohgi",
             "Shirley Fenette",
             "Suzaku Kururugi",
             "Scneizel El Britannia"
+    };
+
+    Integer[] AUDIOS = {
+            R.raw.cc,
+            R.raw.cornelia,
+            R.raw.jeremiah,
+            R.raw.kallen,
+            R.raw.lelouch,
+            R.raw.nunally,
+            R.raw.ohgi,
+            R.raw.shirley,
+            R.raw.suzaku,
+            R.raw.schneizel
     };
 
     @Override
@@ -67,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
                 CallDetail.putExtra("TITLE", TITLES[i]);
                 CallDetail.putExtra("IMAGE", IMAGES[i]);
                 CallDetail.putExtra("ICON", ICONS[i]);
+                CallDetail.putExtra("AUDIO", AUDIOS[i]);
                 startActivity(CallDetail);
             }
         });
